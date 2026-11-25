@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><meta name="theme-color" content="#2b7a69"><title>Panel Admin</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><i></i>Panel Admin</a><div class="row" style="margin:0"><a class="btn sm ghost" href="index.html">Lihat website</a><button class="btn sm" id="out" type="button" hidden>Keluar</button></div></div></header>
+<main class="wrap">
+<section id="login" class="login card" hidden><h1 style="font-size:1.6rem">Masuk admin</h1>
+<form id="lf" novalidate><div><label for="lu">Username atau email</label><input id="lu" autocomplete="username"></div><div><label for="lp">Kata sandi</label><input id="lp" type="password" autocomplete="current-password"></div><p class="err" id="le"></p><div><button class="btn" type="submit">Masuk</button></div></form></section>
+<div id="app" class="adm" hidden><nav class="side" id="tabs" aria-label="Menu admin"></nav><div id="main"></div></div>
+</main>
+<dialog id="dlg"><button class="x" id="dx" type="button" aria-label="Tutup">×</button><h2 id="dt"></h2><form id="df" novalidate></form></dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="assets/supabase-bridge.js"></script>
+<script src="assets/db.js"></script>
+<script src="assets/admin.js"></script>
+</body></html>
